@@ -163,7 +163,10 @@ plot_history(history)
 #%%
 # 测试集
 loss, mae, mse = model.evaluate(normed_test_data, test_labels, verbose=2)
-
+# =============================================================================
+# model.evaluate returns:
+#      loss, metrics
+# =============================================================================
 print("Testing set Mean Abs Error: {:5.2f} MPG".format(mae))
 
 #%%
